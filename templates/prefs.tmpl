@@ -1,0 +1,12 @@
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="edit_prefs" value="1"></div>
+<h3 id="appear">Appearance</h3>
+<p>You can switch the style sheet to change the visual appearance of the site.</p>
+<p><label for="p_stylesheet">Screen style sheet:</label>&nbsp;<TMPL_VAR NAME="stylesheets"></p>
+<p><label for="p_printsheet">Print style sheet:</label>&nbsp;<TMPL_VAR NAME="printsheets"></p>
+<h3 id="time">Time</h3>
+<p>You can have all dates and times displayed in your local time zone.</p>
+<p><label for="p_timezone">Time zone:</label>&nbsp;<TMPL_VAR NAME="time_zones"></p>
+<h3 id="save">Save</h3>
+<p>Your browser must have cookies enabled to use these settings.</p>
+<p><button type="submit">Save</button></p></form>

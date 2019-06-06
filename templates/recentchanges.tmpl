@@ -1,0 +1,4 @@
+<h3>Updates in the last <TMPL_VAR NAME="period"></h3>
+<ul><TMPL_LOOP NAME="filters"><li><TMPL_VAR NAME="filter"></li></TMPL_LOOP></ul>
+<TMPL_IF NAME="recent"><p><span class="error">Notice:</span> No edits since <TMPL_VAR NAME="last_edit">.</p><TMPL_ELSE><TMPL_LOOP NAME="days"><h4><TMPL_VAR NAME="date"></h4>
+<table><tr><th>Page name</th><th>Time modified</th><th>Type</th><th>Summary</th><th>Editor</th></tr><TMPL_LOOP NAME="rows"><tr><td><TMPL_VAR NAME="link"></td><td><TMPL_VAR NAME="time"></td><td><TMPL_IF NAME="type"><span class="error">minor</span></TMPL_IF></td><td><TMPL_IF NAME="summary"><TMPL_VAR NAME="summary"><TMPL_ELSE><span class="error">none</span></TMPL_IF></td><td><TMPL_VAR NAME="author_link"></td></tr></TMPL_LOOP></table></TMPL_LOOP></TMPL_IF>

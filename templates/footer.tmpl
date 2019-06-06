@@ -1,0 +1,10 @@
+</div>
+<ul id="edit" class="bar"><TMPL_UNLESS NAME="revision"><TMPL_IF NAME="edit"><li><TMPL_VAR NAME="edit_link"></li><TMPL_ELSE><li><span>Edit</span></li></TMPL_IF><TMPL_ELSE><TMPL_IF NAME="edit"><li><TMPL_VAR NAME="old_edit_link"></li><TMPL_ELSE><li><span>Edit #<TMPL_VAR NAME="revision"></span></li></TMPL_IF></TMPL_UNLESS>
+<TMPL_IF NAME="history"><li><TMPL_VAR NAME="history_link"></li><TMPL_ELSE><li><span>History</span></li></TMPL_IF>
+<TMPL_IF NAME="backlinks"><li><TMPL_VAR NAME="backlinks_link"></li><TMPL_ELSE><li><span>Backlinks</span></li></TMPL_IF>
+<TMPL_IF NAME="locked"><TMPL_IF NAME="unlock_admin"><li><TMPL_VAR NAME="unlock_link"></li><TMPL_ELSE><li><span>Unlock</span></li></TMPL_IF><TMPL_ELSE><TMPL_IF NAME="lock_admin"><li><TMPL_VAR NAME="lock_link"></li><TMPL_ELSE><li><span>Lock</span></li></TMPL_IF></TMPL_IF>
+<TMPL_IF NAME="delete"><li><TMPL_VAR NAME="delete_link"></li><TMPL_ELSE><li><span>Delete</span></li></TMPL_IF>
+<TMPL_IF NAME="discuss"><li><TMPL_VAR NAME="discuss_link"></li><TMPL_ELSE><li><span>Discuss</span></li></TMPL_IF></ul>
+<div id="foot"><TMPL_VAR NAME="goto_bar">
+<TMPL_IF NAME="edited"><p>Edited <TMPL_VAR NAME="edit_time"> by <TMPL_VAR NAME="editor">.</p>
+</TMPL_IF><TMPL_INCLUDE NAME="searchform.tmpl"></div></body></html>

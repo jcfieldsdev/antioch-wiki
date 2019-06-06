@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title><TMPL_VAR NAME="site_name"></title>
+		<link><TMPL_VAR NAME="rc_name"></link>
+		<description>The latest changes on the <TMPL_VAR NAME="site_name"> wiki.</description>
+		<language>en</language><TMPL_LOOP NAME="posts">
+		<item>
+			<title><TMPL_VAR NAME="page_name"></title>
+			<category><TMPL_VAR NAME="type"></category>
+			<link><TMPL_VAR NAME="link"></link>
+			<description><TMPL_VAR NAME="summary"></description>
+			<author><TMPL_VAR NAME="email"> (<TMPL_VAR NAME="author">)</author>
+			<pubDate><TMPL_VAR NAME="date"></pubDate>
+			<guid><TMPL_VAR NAME="guid"></guid>
+		</item></TMPL_LOOP>
+	</channel>
+</rss>

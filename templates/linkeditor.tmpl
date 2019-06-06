@@ -1,0 +1,12 @@
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="edit_links" value="1"></div>
+<p>Enter one command per line. The commands are:</p>
+<ul><li><code>!Page_Name</code>—Deletes the page called Page_Name.</li>
+<li><code>=Old_Page_Name=New_Page_Name</code>—Renames Old_Page_Name to New_Page_Name and updates links to Old_Page_Name.</li>
+<li><code>|Old_Page_Name|New_Page_Name</code>—Changes links to Old_Page_Name to New_Page_Name (used to rename links to non-existing pages).</li></ul>
+<p>Page names are case-sensitive. Replace spaces with underscores.</p>
+<p><span class="error">Notice:</span> This action requires administrative privileges.</p>
+<p><label for="commandlist">Command console:</label></p>
+<p><textarea rows="20" cols="80" name="commandlist" id="commandlist"></textarea></p>
+<p><label><input type="checkbox" name="p_changetext" checked="checked">&nbsp;Substitute text for rename</label></p>
+<p><button type="submit">Edit</button></p></form>

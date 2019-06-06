@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head><title><TMPL_VAR NAME="title"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><TMPL_IF NAME="no_index">
+<meta name="robots" content="noindex"></TMPL_IF><TMPL_IF NAME="home_page">
+<meta name="title" content="<TMPL_VAR NAME="site_name">"></TMPL_IF>
+<link href="schemes/<TMPL_VAR NAME="stylesheet">/screen.css" media="screen" rel="stylesheet" type="text/css">
+<link href="schemes/<TMPL_VAR NAME="printsheet">/print.css" media="print" rel="stylesheet" type="text/css">
+<link href="schemes/<TMPL_IF NAME="error">erricon.png<TMPL_ELSE>favicon.png</TMPL_IF>" rel="shortcut icon" type="image/png">
+<link href="schemes/homeicon.png" rel="apple-touch-icon-precomposed">
+<link href="<TMPL_VAR NAME="script_name">?action=rss" rel="alternate" title="Recent Changes" type="application/rss+xml">
+<link href="feed.php" rel="alternate" title="Recent Forum Posts" type="application/rss+xml">
+<link href="." rel="top" title="<TMPL_VAR NAME="site_name">"></head>
+<body><div id="head"><h1><a href="."><span><TMPL_VAR NAME="site_name"></span></a></h1>
+<h2><TMPL_VAR NAME="page_name"></h2></div>
+<ul id="menu"><TMPL_LOOP NAME="menu"><li><TMPL_VAR NAME="link"></li></TMPL_LOOP></ul>
+<div id="body"><TMPL_IF NAME="redirect"><p><span class="error">Notice:</span> Redirected from <TMPL_VAR NAME="old_page">.</p></TMPL_IF>

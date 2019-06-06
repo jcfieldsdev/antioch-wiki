@@ -1,0 +1,25 @@
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="title" value="<TMPL_VAR NAME="page_id">">
+<input type="hidden" name="oldtime" value="<TMPL_VAR NAME="timestamp">">
+<input type="hidden" name="oldconflict" value="<TMPL_VAR NAME="conflict">"><TMPL_IF NAME="revision">
+<input type="hidden" name="revision" value="<TMPL_VAR NAME="revision">"></TMPL_IF></div>
+<TMPL_IF NAME="revision"><p><span class="error">Notice:</span> Editing old revision <TMPL_VAR NAME="revision">. Saving this page will replace the latest revision with this text.</p>
+</TMPL_IF><TMPL_IF NAME="conflict"><h2>Edit Conflict</h2>
+<p><span class="error">Notice:</span> Someone saved this page after you started editing. The top textbox contains the saved text. Only the text in the top textbox will be saved.</p>
+<p>Scroll down to see your edited text.</p>
+<p><label>Last save time:</label> <TMPL_VAR NAME="last_save"></p>
+<p><label>Current time:</label> <TMPL_VAR NAME="current_time"></p>
+</TMPL_IF><p><label for="text">Page source:</label></p>
+<p><textarea rows="20" cols="80" name="text" id="text"><TMPL_VAR NAME="text"></textarea></p>
+<TMPL_IF NAME="edit"><script src="wikibar.js" type="text/javascript"></script>
+<p><label for="summary">Summary:</label>&nbsp;<input type="text" value="<TMPL_VAR NAME="summary">" name="summary" id="summary">&nbsp;<label><input type="checkbox" name="minor_edit"<TMPL_IF NAME="minor_edit"> checked="checked"</TMPL_IF>>&nbsp;Minor edit</label><TMPL_IF NAME="admin">
+<label><input type="checkbox" name="hidden_edit"<TMPL_IF NAME="hidden_edit"> checked="checked"</TMPL_IF>>&nbsp;Hidden edit</label></TMPL_IF></p>
+<TMPL_IF NAME="conflict">"<p>This is the text you submitted:</p>
+<p><textarea rows="20" cols="80" name="newtext" id="newtext"><TMPL_VAR NAME="new_text"></textarea></p>
+</TMPL_IF><ul><li>Editing page <TMPL_VAR NAME="page_link">.</li>
+<li>For basic formatting syntax, see the <TMPL_VAR NAME="format_link"> page.</li>
+<li>Only registered forum members can edit the wiki.</li></ul>
+<p><button type="submit">Submit</button>&nbsp;<label><input type="checkbox" name="preview" checked="checked">&nbsp;Preview</label></p><TMPL_IF NAME="preview">
+<h2>Preview Page</h2><TMPL_IF NAME="conflict">
+<p><span class="error">Notice:</span> This preview shows the revision of the other author.</p></TMPL_IF>
+<TMPL_VAR NAME="body"></TMPL_IF><TMPL_ELSE><TMPL_UNLESS NAME="logged_in"><p><span class="error">Notice:</span> You must log in to edit this page.</p></TMPL_UNLESS><TMPL_IF NAME="banned"><p><span class="error">Notice:</span> You have been banned from editing this wiki.</p></TMPL_IF><TMPL_IF NAME="page_locked"><p><span class="error">Notice:</span> This page is locked. Only administrators can edit it.</p></TMPL_IF><TMPL_IF NAME="wiki_locked"><p><span class="error">Notice:</span> This wiki is locked. Only administrators can edit it.</p></TMPL_IF></TMPL_IF></form>

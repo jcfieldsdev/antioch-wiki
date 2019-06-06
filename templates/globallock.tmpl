@@ -1,0 +1,6 @@
+<TMPL_IF NAME="confirm"><p>Edit lock <TMPL_IF NAME="locked">created<TMPL_ELSE>removed</TMPL_IF>.</p><TMPL_ELSE><p>This function locks all pages on the site, preventing all users without administrative privileges from modifying anything.</p>
+<p><span class="error">Notice:</span> This action requires administrator privileges.</p>
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="action" value="edit_lock">
+<input type="hidden" name="confirm" value="1"></div>
+<p><button type="submit"><TMPL_IF NAME="locked">Unlock<TMPL_ELSE>Lock</TMPL_IF></button></p></TMPL_IF></form>

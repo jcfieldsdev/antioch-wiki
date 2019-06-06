@@ -1,0 +1,8 @@
+<TMPL_IF NAME="confirm"><p><TMPL_IF NAME="home_page"><span class="error">Error:</span> The page &ldquo;<TMPL_VAR NAME="page_id">&rdquo; cannot be deleted because it is the home page.<TMPL_ELSE><TMPL_IF NAME="locked"><span class="error">Error:</span> The page &ldquo;<TMPL_VAR NAME="page_id">&rdquo; can not be deleted because it is locked.<TMPL_ELSE><TMPL_IF NAME="success">The page &ldquo;<TMPL_VAR NAME="page_id">&rdquo; was successfully deleted.<TMPL_ELSE><span class="error">Error:</span> The page &ldquo;<TMPL_VAR NAME="page_id">&rdquo; cannot be deleted.</TMPL_IF></TMPL_IF></TMPL_IF></p><TMPL_ELSE><p>Do you wish to delete the page <TMPL_VAR NAME="page_link">?</p>
+<p>This deletes the page history and everything, so be careful.</p>
+<p><span class="error">Notice:</span> Only administrators can delete pages.</p>
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="action" value="delete">
+<input type="hidden" name="confirm" value="1">
+<input type="hidden" name="id" value="<TMPL_VAR NAME="page_id">"></div>
+<p><button type="submit">Delete</button></p></form></TMPL_IF>

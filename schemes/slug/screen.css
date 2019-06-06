@@ -1,0 +1,351 @@
+*.float.c, div#about, div#foot, p.port, p.post
+{text-align: center;}
+
+*.float.l, div.img, h1, p.port, ul.bar li, ul.wikibar li
+{float: left;}
+
+*.float.r, p.post
+{clear: right; float: right;}
+
+a
+{background: none; color: #ffe000; font-weight: bold; text-decoration: none;}
+
+a, button
+{cursor: pointer;}
+
+a.edit
+{background-image: url(../icons/edit-w.svg);}
+
+a.edit, a.rss, a[href^="mailto:"]
+{background-position: 100% 50%; background-repeat: no-repeat; background-size: 1em 1em; padding-right: 1.2em; text-decoration: none;}
+
+a.rss
+{background-image: url(rss.svg);}
+
+a[href^="mailto:"]
+{background-image: url(../icons/email-w.svg);}
+
+a:hover, a:active, button:hover, button:active
+{transition: all 0.25s;}
+
+blockquote
+{border-left: 2px solid #ffe000; overflow: auto; padding-left: 1em;}
+
+body
+{margin: 100px 20%; padding: 0;}
+
+button, div.img, fieldset
+{border: 1px solid #808080; padding: 0.5em;}
+
+button, h3, h4, label, legend, th, ul#menu a, ul.bar a
+{text-shadow: #000 1px 1px;}
+
+button, input, label, legend, p.post, select, ul#menu a, ul.bar a, ul.bar span
+{font-family: Verdana, Helvetica, sans-serif;}
+
+button, input, select, textarea
+{background: #404040; color: #fff;}
+
+button, input, select, ul#menu, ul.bar li
+{line-height: 100%;}
+
+button, label, legend, span.error, ul.bar
+{font-size: 7pt;}
+
+button, label, legend, ul#menu a, ul.bar a, ul.bar span
+{font-weight: bold; letter-spacing: 0.2em; text-transform: uppercase;}
+
+button:hover, button:active
+{background: #ffe000; border-color: #ffc000; color: #404040;}
+
+button:hover, button:active, ul#menu a:hover, ul#menu a:active, ul.bar a:hover, ul.bar a:active
+{text-shadow: #c0c0c0 1px 1px;}
+
+cite, em
+{font-style: italic;}
+
+code
+{background: #333; border: 2px solid #666; color: #fff;}
+
+code, pre, textarea
+{font-family: Consolas, "Lucida Console", monospace;}
+
+div#about
+{margin: 0 12em 2em 0;}
+
+div#ac div.badge a
+{background-image: url(badge-ac.svg); width: 234px;}
+
+div#af div.badge a
+{background-image: url(badge-af.svg); width: 369px;}
+
+div#ar div.badge a
+{background-image: url(badge-ar.svg); width: 280px;}
+
+div#at div.badge a
+{background-image: url(badge-at.svg); height: 48px; width: 344px;}
+
+div#body
+{background: #404040 url(bg-body.svg); border: 3px solid #606060; color: inherit; min-height: 40em; padding: 2em;}
+
+div#body a:hover, div#body a:active
+{background-color: #ffe000; color: #404040;}
+
+div#foot
+{background: none; color: #808080; padding-top: 2em;}
+
+div#foot, div.contents, div.img, p.copy, p.port, p.post, span.error, textarea, th, ul.crumbs
+{font-size: 9pt;}
+
+div#foot, hr, p.copy, table, ul.bar, ul.pages
+{clear: both;}
+
+div#foot a
+{color: #404040;}
+
+div#foot a:hover, div#foot a:active
+{background: #404040; color: #ffe000;}
+
+div#foot label
+{text-shadow: #a0a0a0 1px 1px;}
+
+div#foot p, h1, h2
+{margin: 0;}
+
+div#readme
+{clear: left;}
+
+div.badge a
+{background-position: 50% 50%; background-repeat: no-repeat; height: 32px; margin: auto; padding: 4px;}
+
+div.badge a, ul#menu a, ul.bar a, ul.bar span, ul.pages a, ul.pages span, ul.wikibar a
+{display: block;}
+
+div.badge span, ul.wikibar span
+{display: none;}
+
+div.contents
+{width: 33%;}
+
+div.contents.long
+{column-count: 2; width: 67%;}
+
+div.icon
+{align-items: center; display: flex; height: 300px; justify-content: center; overflow: hidden;}
+
+div.icon, div.img
+{width: 300px;}
+
+div.img
+{margin: 0 1em 1em 0;}
+
+div.img img
+{border: 0;}
+
+div.img p
+{height: 12em; margin: 0; overflow: hidden; text-align: center; white-space: nowrap;}
+
+div.page
+{background: #fff; color: #000; padding: 1em;}
+
+fieldset
+{margin: 1em 0;}
+
+h1
+{font-size: 200%; font-weight: normal;}
+
+h1, h2
+{text-shadow: #606060 1px 1px;}
+
+h1 a
+{background: none; color: #fff;}
+
+h2
+{font-size: 150%; font-weight: normal; text-align: right;}
+
+h3
+{background: #484848; clear: left; color: inherit; margin: 1em auto; text-align: center; width: 50%;}
+
+h3, input, select
+{border: 1px solid #606060;}
+
+h4
+{font-size: 100%; letter-spacing: 0.25em; text-transform: uppercase;}
+
+h4, p.post:first-line, span.error, span.username, strong, th, ul.pages span
+{font-weight: bold;}
+
+hr
+{border-color: #ffe000; border-style: solid; border-width: 1px 0; width: 33%;}
+
+html
+{background: #ffe000 url(bg.svg) 0 50% fixed; background-size: cover; color: #fff; font: 11pt/200% "Times New Roman", serif; padding: 0;}
+
+img.icon
+{height: 32px; margin: 2px 4px 2px 0; vertical-align: middle; width: 32px;}
+
+img.icon.hg
+{height: 128px; width: 128px;}
+
+img.icon.lg
+{height: 48px; width: 48px;}
+
+img.icon.sm
+{height: 20px; width: 20px;}
+
+img.preview
+{height: 400px; width: 600px;}
+
+input[disabled]
+{background: none; border-color: #900; color: #999;}
+
+input[type="password"], input[type="text"]
+{width: 20em;}
+
+input[type="password"]:focus, input[type="text"]:focus, select:focus, textarea:focus
+{border-color: #ffe000;}
+
+input#password, input#username
+{width: 12em;}
+
+input#search
+{width: 16em;}
+
+input.meta
+{width: 8em;}
+
+p.port
+{height: 80px; width: 80px;}
+
+p.port img
+{height: 56px; width: 56px;}
+
+p.post
+{background: #606060; border: 2px solid #808080; box-shadow: 3px 3px #000; clear: right; color: inherit; margin: 0 0 1em 1em; padding: 0.5em 2em; white-space: nowrap;}
+
+p.post, textarea
+{line-height: 150%;}
+
+span.diffchange
+{background: none; color: #f00; font-weight: bold;}
+
+table
+{border-collapse: collapse; margin: auto; width: 95%;}
+
+table.diff td, table.diff th
+{border: 0 none; width: 50%;}
+
+td, th
+{border-bottom: 1px solid #c0c0c0;}
+
+td.diffnew
+{background: #cfffcf; border-bottom-color: #cff0cf;}
+
+td.diffnew, td.diffold
+{border-bottom-style: solid; border-bottom-width: 2px; color: #000; vertical-align: top; white-space: pre-wrap;}
+
+td.diffold
+{background: #ffffaf; border-bottom-color: #f0f0af;}
+
+td.diffsummary, td.dirmsg
+{font-style: italic; text-align: center;}
+
+textarea
+{border: 2px solid #c0c0c0; clear: left; height: 20em; width: 100%;}
+
+textarea.meta
+{height: 10em; width: 67%;}
+
+ul
+{list-style: square;}
+
+ul#goto, ul#menu, ul.bar, ul.crumbs, ul.pages, ul.wikibar
+{list-style: none;}
+
+ul#goto, ul#menu, ul.bar, ul.wikibar
+{margin: 0; padding: 0;}
+
+ul#goto li
+{padding: 0 0.5em;}
+
+ul#goto li, ul#menu li, ul.crumbs li
+{display: inline;}
+
+ul#menu
+{border-top: 3px solid #606060; float: right; margin: 0 0 1em 1em; width: 12em;}
+
+ul#menu a
+{border-right: 3px solid #606060; border-bottom: 1px solid #606060; border-left: 1px solid #606060; font-size: 8pt; padding: 0.5em 1em; text-align: right;}
+
+ul#menu a, ul.bar
+{background: #404040; color: #c0c0c0;}
+
+ul#menu a:hover, ul#menu a:active
+{background: #ffe000; border-bottom-color: #ffe000; border-left-color: #ffc000; border-right-color: #ffc000; color: #404040;}
+
+ul.bar
+{background: #404040; border-color: #606060; border-style: solid; border-width: 0 3px 3px; height: 2em;}
+
+ul.bar a, ul.bar span
+{background: none; border-right: 1px solid #606060; color: inherit; height: 1em; padding: 0.5em;}
+
+ul.bar a:hover, ul.bar a:active
+{background: #ffe000; color: #404040;}
+
+ul.bar li
+{width: 10em;}
+
+ul.bar span
+{background: inherit; color: #606060;}
+
+ul.crumbs, ul.pages
+{margin: 1em 0; padding: 0;}
+
+ul.crumbs li
+{padding-right: 1em;}
+
+ul.pages
+{display: flex; justify-content: center;}
+
+ul.pages a
+{outline: 1px solid #c0c0c0; text-decoration: none;}
+
+ul.pages a, ul.pages span
+{text-align: center; margin: 0 0.5em; width: 2em;}
+
+ul.pages a:hover, ul.pages a:active
+{outline-color: #fff;}
+
+ul.wikibar a
+{background-position: 50% 50%; background-repeat: no-repeat; color: inherit; height: 32px; padding: 4px; width: 32px;}
+
+ul.wikibar a#bold
+{background-image: url(../icons/wikibar/w/b.svg);}
+
+ul.wikibar a#heading
+{background-image: url(../icons/wikibar/w/h.svg);}
+
+ul.wikibar a#hr
+{background-image: url(../icons/wikibar/w/hr.svg);}
+
+ul.wikibar a#italic
+{background-image: url(../icons/wikibar/w/i.svg);}
+
+ul.wikibar a#link
+{background-image: url(../icons/wikibar/w/a.svg);}
+
+ul.wikibar a#list
+{background-image: url(../icons/wikibar/w/li.svg);}
+
+ul.wikibar li
+{margin: 0 0.5em 0.5em 0;}
+
+@media (max-width: 1280px) {
+	body
+	{margin: 80px 10%;}
+}
+
+@media (max-width: 768px) {
+	body
+	{margin: 40px 5%;}
+}

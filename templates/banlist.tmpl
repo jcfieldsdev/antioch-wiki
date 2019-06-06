@@ -1,0 +1,11 @@
+<form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="edit_ban" value="1"></div>
+<p>Banned users can view but cannot edit the wiki. Administrator users cannot be banned.</p>
+<p>Each entry is either a commented line (starting with a #) or a Perl-compatible regular expression (matching either an IP address or a hostname).</p>
+<p><span class="error">Notice:</span> This action requires administrative privileges.</p><p>Examples:</p>
+<blockquote><pre>\.example\.com$		# blocks hosts ending with .example.com
+^123\.21\.3\.9$		# blocks exact IP address
+^123\.21\.3\.\d+$	# blocks whole 123.21.3.* IP network</pre></blockquote>
+<p><label for="banlist">Banned list:</label></p>
+<p><textarea rows="20" cols="80" name="banlist" id="banlist"><TMPL_VAR NAME="ban_list"></textarea></p>
+<p><button type="submit">Save</button></p></form>

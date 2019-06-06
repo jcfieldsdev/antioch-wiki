@@ -1,0 +1,119 @@
+*.float.c, div#foot, h1, h2, p.port, p.post
+{text-align: center;}
+
+*.float.l, p.port
+{float: left; margin: 1em 1em 1em 0;}
+
+*.float.r, p.post
+{float: right; margin: 1em 0 1em 1em;}
+
+a
+{background: none; color: inherit; font-weight: bold; text-decoration: underline;}
+
+a, button, html, select, textarea
+{color: #000;}
+
+a img
+{border: 1px solid #000;}
+
+blockquote
+{border-left: 2px solid #000; padding-left: 4px;}
+
+button, div#foot, div.contents, label, p.copy, p.port, p.post, span.error, strong, th, ul.crumbs, ul.bar li
+{font-size: 7.5pt;}
+
+button, html, input, select
+{font-family: Constantia, Baskerville, serif;}
+
+button, html, select, textarea
+{background: #fff; color: #000; line-height: 150%;}
+
+button, input, select
+{line-height: 100%;}
+
+button, input, select, textarea
+{border: 1px solid #000;}
+
+button, h1, h2, h4, label, span.error, strong, th
+{font-weight: bold;}
+
+cite, em
+{font-style: italic;}
+
+code, pre, textarea
+{font-family: Consolas, "Lucida Console", monospace;}
+
+div#about, div#foot form, ul#goto, ul#menu, ul.bar, ul.crumbs, ul.wikibar
+{display: none;}
+
+div#body
+{text-align: left;}
+
+div#body, div#foot, div#head, h3, h4, hr, table
+{clear: both;}
+
+h1
+{font-size: 20pt;}
+
+h1 a
+{text-decoration: none;}
+
+h2
+{font-size: 16pt;}
+
+h3
+{font-size: 12pt; font-weight: normal;}
+
+h4
+{letter-spacing: 0.25em; margin-left: 1em; text-indent: -1em;}
+
+hr
+{border-color: #000; border-style: solid; border-width: 1px 0;}
+
+html
+{padding: 0;}
+
+html, h4, input, select, textarea
+{font-size: 9pt;}
+
+img#title, img.icon, table.page, table.page td, table.page th
+{border: 0;}
+
+img.icon.lg
+{height: 48px; width: 48px;}
+
+img.icon.md
+{height: 32px; width: 32px;}
+
+img.icon.sm
+{height: 16px; width: 16px;}
+
+img.preview
+{height: 150px; width: 200px;}
+
+input[disabled]
+{background: none; border-color: #999; color: #999;}
+
+p.port
+{height: 80px; width: 80px;}
+
+p.port img
+{height: 56px; width: 56px;}
+
+p.post
+{background: #e0e0e0; border: 2px solid #c0c0c0; clear: right; color: inherit; margin: 0 0 1em 1em; padding: 0 0.5em;}
+
+p.post:first-line
+{font-weight: bold;}
+
+table
+{border-collapse: collapse; margin: auto; width: 90%;}
+
+td, th
+{border-bottom: 1px solid #a0a0a0; vertical-align: top;}
+
+textarea
+{height: 20em; width: 100%;}
+
+th
+{font-style: normal; text-align: left;}

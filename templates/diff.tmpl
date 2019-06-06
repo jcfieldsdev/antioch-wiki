@@ -1,0 +1,5 @@
+<h3 id="diff">Differences</h3>
+<table class="diff"><tr><th><TMPL_VAR NAME="old_revision"><br>by <TMPL_VAR NAME="old_author"></th><th><TMPL_VAR NAME="new_revision"><br>by <TMPL_VAR NAME="new_author"></th>
+<TMPL_IF NAME="summary"><tr><td class="diffsummary"><TMPL_VAR NAME="old_summary"></td><td class="diffsummary"><TMPL_VAR NAME="new_summary"></td></tr></TMPL_IF>
+<tr><td class="diffold"><TMPL_LOOP NAME="old_lines"><TMPL_VAR NAME="item"></TMPL_LOOP></td>
+<td class="diffnew"><TMPL_LOOP NAME="new_lines"><TMPL_VAR NAME="item"></TMPL_LOOP></td></tr></table>

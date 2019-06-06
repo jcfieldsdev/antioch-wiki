@@ -1,0 +1,7 @@
+<TMPL_IF NAME="user_name"><p>Logged in as <TMPL_VAR NAME="user_page">.</p>
+<form method="get" action="<TMPL_VAR NAME="script_name">">
+<div><input type="hidden" name="do_search" value="1"></div>
+<p><label for="search">Query:</label>&nbsp;<input type="text" name="search" id="search">&nbsp;<button type="submit">Search</button></p></form><TMPL_ELSE><form method="post" action="<TMPL_VAR NAME="script_name">" enctype="application/x-www-form-urlencoded">
+<div><input type="hidden" name="action" value="login"></div>
+<p><label for="username">User name:</label>&nbsp;<input type="text" name="username" id="username">
+<label for="password">Password:</label>&nbsp;<input type="password" name="password" id="password">&nbsp;<button type="submit">Submit</button></p></form></TMPL_IF>

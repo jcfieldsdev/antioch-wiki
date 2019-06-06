@@ -1,0 +1,15 @@
+<form method="get" action="<TMPL_VAR NAME="script_name">">
+<div><input type="hidden" name="action" value="browse">
+<input type="hidden" name="diff" value="1">
+<input type="hidden" name="id" value="<TMPL_VAR NAME="page_id">"></div>
+<h3 id="vers">Versions</h3>
+<table><tr><th></th><th></th><th>#</th><th>Time modified</th><th>Type</th><th>Summary</th><th>Editor</th></tr>
+<TMPL_LOOP NAME="versions"><tr><td><input type="radio" name="diffrevision" value="<TMPL_VAR NAME="revision">"<TMPL_IF NAME="checked1"> checked="checked"</TMPL_IF>></td>
+<td><input type="radio" name="revision" value="<TMPL_VAR NAME="revision">"<TMPL_IF NAME="checked2"> checked="checked"</TMPL_IF>></td>
+<td><TMPL_VAR NAME="page_link"></td>
+<td><TMPL_VAR NAME="date_time"></td>
+<td><TMPL_IF NAME="type"><span class="error">minor</span></TMPL_IF></td>
+<td><TMPL_IF NAME="summary"><TMPL_VAR NAME="summary"><TMPL_ELSE><span class="error">none</span></TMPL_IF></td>
+<td><TMPL_VAR NAME="author_link"></td></tr></TMPL_LOOP NAME="versions"></table>
+<TMPL_IF NAME="revisions"><p><button type="submit">Compare</button></p><TMPL_ELSE><p>This page only has one revision stored.</p></TMPL_IF></form>
+<TMPL_VAR NAME="diff">
